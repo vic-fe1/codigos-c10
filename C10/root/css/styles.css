@@ -1,0 +1,31 @@
+.logo-img {
+    width:75px;
+}
+
+.img-main {
+    width: 400px;
+}
+
+.header-background {
+    background-image: url('https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?w=2000');
+    background-size: cover;
+}
+
+
+/* SELECTOR DE CLASE 
+Características: es reutilizable! */ 
+
+.textos-home {
+    color:rgba(130, 27, 27, 0.5);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subtitulo {
+    background-color: #000;
+}
+
+/* SELECTOR DE ID */ 
+
+#titulo-home {
+    font-size: 150px;
+}
