@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h3>Registrarte</h3>
+      <p>Es rápido y fácil</p>
+
+      <!-- FORMULARIO -->
+      <form action="./data/form.php" method="POST">
+        <!-- el FOR del label y el ID del input deben ser iguales -->
+        <label for="nombre">Escribí acá tu nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Victor" />
+
+        <label for="apellido">Escribí acá tu apellido:</label>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Apellido"
+        />
+
+        <!-- TYPE EMAIL Y TYPE TEL -->
+        <label for="tel">Tu numero de celular:</label>
+        <input type="tel" name="tel" id="tel" placeholder="Celular" />
+        <label for="email">Escribí acá tu email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+
+        <input type="checkbox" name="check" id="chek" value="HTML" />
+        <label for="chek">TILDAME SI SABES HTML</label>
+        <input type="checkbox" name="check" id="chek" value="CSS" />
+        <label for="chek">TILDAME SI SABES CSS</label>
+        <input type="checkbox" name="check" id="chek" value="JS" />
+        <label for="chek">TILDAME SI SABES JS</label>
+
+        <label for="radio"></label>
+        <input type="radio" name="radio" id="radio" />
+
+        <input type="date" name="" id="" />
+        <textarea form="form_id"></textarea>
+
+        <button type="submit">ENVIAR FORMULARIO</button>
+      </form>
+    </section>
+  </body>
+</html>
