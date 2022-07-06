@@ -1,0 +1,58 @@
+/* VARIABLES
+¿Que puedo guardar en variables?
+
+-> VALORES <-
+colores, numeros, medidas, disposiciones.
+*/
+
+
+/* COLORES - 70% 20% 10% */
+$color-principal: #fe001a;
+$color-secundario: rgb(255, 255, 255);
+$color-alternativo: #000;
+
+/* NESTING y uso de @extend */ 
+
+article {
+    height: 90vh;
+    width: 100vw;
+    .button {
+        width: 200px;
+        height: 50px;
+        margin: 10px 30px;
+        border-radius: 20px;
+        border: none;
+        transition: all 0.5s linear;
+        padding: 5px;
+        background-color: aquamarine;
+        &-primario {
+            @extend .button;
+            background-color: $color-principal;
+        }
+        &-secundario {
+            @extend .button;
+            background-color: $color-secundario;
+            color: $color-alternativo;
+        }
+        &-alternativo {
+            @extend .button; 
+            background-color: $color-secundario;
+            border: 3px solid $color-alternativo;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+/* AGREGAR UN HOVER A TODOS LOS BOTONES: que tenga un transform, cursor y animacion.
+
+CREAR UNA CLASE FLEX QUE ADMITA LAS SIGUIENTES SUBCLASES::after
+
+.flex-column-around
+.flex-column-between
+.flex-row-around
+.flex-row-between
+
+*/
