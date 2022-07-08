@@ -1,0 +1,61 @@
+@mixin texto($size: 1rem, $color: #000) {
+  font-size: $size;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: $color;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin botones($rd, $bg, $color) {
+    border-radius: $rd;
+    margin: 5px 10px;
+    display: block;
+    padding: 5px 15px;
+    border: none;
+    background-color: $bg;
+    color: $color;
+    box-shadow: 0px 12px 15px -2px rgba(81, 81, 81, 0.31);
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO: 
+CON @INCLUDE AÑADO AL MIXIN A MI CLASE. */
+
+.boton {
+  &-comprar {
+    @include botones(10px, rgb(11, 133, 11), #FFF);
+    &:hover {
+      @include botones(20px, rgb(5, 66, 5), #FFF);
+    }
+  }
+  &-peligro {
+
+  }
+  &-aviso {
+
+  }
+  &-deshabilitado {
+
+  }
+}
+
+
+$normal: 1rem;
+$grande: 2rem;
+$rojo: #FF0000;
+
+
+
+.texto {
+  &-parrafo {
+    @include texto($grande, $rojo);
+  }
+  &-titulos {
+    @include texto(2.5rem);
+  }
+  &-span {
+    @include texto(0.5rem, )
+  }
+}

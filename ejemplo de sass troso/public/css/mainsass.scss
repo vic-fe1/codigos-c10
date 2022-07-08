@@ -1,0 +1,19 @@
+/* USO DE PARTIALS -> BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+@use "_flexcards.scss";
+@use "_animations.scss";
+@use "_fonts.scss";
+
+/* TRAE EL CODIGO DE FLEXCARDS Y ANIMATIONS */
+
+/* KISS */
+/* D.R.Y 
+Buena práctica -> Don't repeat yourself -> NO TE REPITAS >:( 
+*/ 
+/* SEPARATION OF CONCERNS  
+Buena práctica -> Separar cada cosa segun su funcion / logica 
+*/ 
+
+body { background-color: #c7c7c7; }
+
+
